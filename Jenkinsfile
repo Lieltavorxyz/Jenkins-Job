@@ -27,9 +27,9 @@ pipeline {
         }
     }
     post {
-        always {
-            echo "=====+++++always+++++====="
-        }
+        // always {
+        //     echo "=====+++++always+++++====="
+        // }
         success {
             echo "====++++only when successful++++===="
         }

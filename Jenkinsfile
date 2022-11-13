@@ -3,7 +3,9 @@ pipeline {
     stages {
         stage ("Cloning.....") {
             steps {
-                sh " git clone https://github.com/devopsPRO27/requests "
+                checkout([$class: 'GitSCM', branches: [[name: '*/main']]
+                , extensions: [],
+                 userRemoteConfigs: [[url: 'https://github.com/Lieltavorxyz/Jenkins-Job']]])
             }
         }
     

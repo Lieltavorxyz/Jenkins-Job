@@ -31,7 +31,7 @@ pipeline {
         //     echo "=====+++++always+++++====="
         // }
         success {
-            echo "====++++only when successful++++===="
+            sh "docker build -t requestsFromJenkins ."
         }
         failure {
             echo "====++++only when failure++++===="

@@ -11,7 +11,7 @@ pipeline {
     
         stage ("Building.....") {
             steps {
-                echo "=======Building========"            
+                sh "python3 http_e.py"            
             }
                     
         }

@@ -1,9 +1,9 @@
 pipeline {
     agent any
     stages {
-        stage ("Fetching.....") {
+        stage ("Cloning.....") {
             steps {
-                echo "========Fetching========"
+                sh " git clone https://github.com/devopsPRO27/requests "
             }
         }
     

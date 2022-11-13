@@ -17,7 +17,7 @@ pipeline {
         }
         stage ("Testing.....") {
             steps {
-                echo "=======Testing========"
+                sh "pytest TestRest.py"
             }
         }
         stage ("Deploying.....") {
